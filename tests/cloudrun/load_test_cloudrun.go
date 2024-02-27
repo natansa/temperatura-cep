@@ -1,4 +1,4 @@
-package tests
+package cloudrun
 
 import (
 	"fmt"
@@ -6,10 +6,11 @@ import (
 	"net/http"
 	"sync"
 	"testing"
+
 	"time"
 )
 
-func TestLoadCloudRun(t *testing.T) {
+func TestLoad(t *testing.T) {
 	var wg sync.WaitGroup
 	zipcode := "08673000"
 	totalRequests := 20

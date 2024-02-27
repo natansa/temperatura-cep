@@ -38,9 +38,9 @@ func main() {
 		tempKelvin := services.CelsiusToKelvin(tempCelsius)
 
 		response := map[string]float64{
-			"temp_C": tempCelsius,
-			"temp_F": tempFahrenheit,
-			"temp_K": tempKelvin,
+			"Temperatura Celsius":    tempCelsius,
+			"Temperatura Fahrenheit": tempFahrenheit,
+			"Temperatura Kelvin":     tempKelvin,
 		}
 
 		w.Header().Set("Content-Type", "application/json")
